@@ -1,0 +1,26 @@
+{
+    "id": "httpd",
+    "labels": {
+        "HAPROXY_GROUP": "external",
+        "HAPROXY_0_VHOST": "httpd.gkkxd.com"
+    },
+    "cpus": 0.5,
+    "mem": 64,
+    "instances": 3,
+    "container": {
+        "type": "DOCKER",
+        "docker": {
+            "image": "httpd",
+            "privileged": false,
+            "network": "BRIDGE",
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 0,
+                    "servicePort": 0,
+                    "protocol": "tcp"
+                }
+            ]
+        }
+    }
+}

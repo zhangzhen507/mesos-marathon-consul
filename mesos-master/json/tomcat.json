@@ -1,0 +1,20 @@
+{
+  "id": "tomcat",
+  "labels": {
+    "HAPROXY_GROUP": "external",
+    "HAPROXY_0_VHOST": "tomcat.zzhen.com"
+  },
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "tomcat:8.5",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 8080, "hostPort": 0 }
+      ]
+    }
+  },
+  "instances": 4,
+  "cpus": 1,
+  "mem": 64
+}

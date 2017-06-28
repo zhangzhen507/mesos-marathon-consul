@@ -1,0 +1,20 @@
+{
+  "id": "hostinfo",
+  "labels": {
+    "HAPROXY_GROUP": "external",         
+    "HAPROXY_2_VHOST": "hostinfo.test.com"
+  },
+  "container": {                                
+    "type": "DOCKER",                           
+    "docker": {                                 
+      "image": "hostinfo",                    
+      "network": "BRIDGE",                      
+      "portMappings": [                         
+        { "containerPort": 3000, "hostPort": 0 }
+      ]                                         
+    }                                           
+  },                                            
+  "instances": 2,
+  "cpus": 1,     
+  "mem": 64      
+}

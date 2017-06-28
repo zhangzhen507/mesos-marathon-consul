@@ -1,0 +1,11 @@
+{
+  "zk": "zk://192.168.1.61:2181/mesos",
+  "masters": ["192.168.1.61:5050"],
+  "refreshSeconds": 60,
+  "ttl": 60,
+  "domain": "mesos",
+  "port": 53,
+  "resolvers": ["203.241.132.34"],
+  "timeout": 5,
+  "email": "root.mesos-dns.mesos"
+}

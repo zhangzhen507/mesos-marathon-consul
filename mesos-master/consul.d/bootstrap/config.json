@@ -1,0 +1,11 @@
+{
+	"bootstrap": true,
+	"server": true,
+    "datacenter": "local-cloud",
+    "data_dir": "/var/consul",
+    "log_level": "INFO",
+    "enable_syslog": true,
+    "disable_update_check": true,
+    "ui": true,
+    "start_join": ["192.168.1.64"]
+}

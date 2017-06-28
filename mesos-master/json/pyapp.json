@@ -1,0 +1,16 @@
+{
+  "id": "peek",
+  "cmd": "env >env.txt && python3 -m http.server 8090",
+  "cpus": 0.5,
+  "mem": 32.0,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "python:3",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 8090, "hostPort": 0 }
+      ]
+    }
+  }
+}
